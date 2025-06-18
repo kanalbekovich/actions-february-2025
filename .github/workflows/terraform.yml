@@ -20,7 +20,7 @@ jobs:
     - name: Checkout SCM
       uses: actions/checkout@v4
       with:
-        repository: kaizenacademy/actions-terraform
+        repository: kanalbekovich/actions-terraform
 
     - name: Download Terraform
       uses: hashicorp/setup-terraform@v3
