@@ -13,6 +13,17 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: kanalbekovich/actions-terraform
+      
+    - name: Install Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: "1.12.2"
     
     - name: Terraform Init
       run: terraform init
+
+    - name: Terraform Plan
+      run: terraform plan
+
+    - name: Terraform Apply 
+      run: terraform apply -auto-approve
