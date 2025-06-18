@@ -11,3 +11,5 @@ jobs:
     steps: 
     - name: Checkout SCM
       uses: actions/checkout@v4
+      with:
+        repository: kanalbekovich/actions-terraform
